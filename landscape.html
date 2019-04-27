@@ -1,0 +1,328 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Colorful Ventures</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/colorful.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top"  data-target=".navbar-fixed-top">
+<!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!--button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button-->
+                
+                <a class="navbar-brand page-scroll" href="/">
+                   <i class="fa fa-play-circle"></i><img src="img/logo-colorful-ventures-sm.png" height="42" style="margin-top:-6px">&nbsp;&nbsp;Colorful Ventures
+                </a>
+    
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    
+                    <li class="active">
+                        <a href="/landscape.html">Landscape</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.html#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index.html#contact">Contact</a>
+                    </li>
+    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+        <div class="alert alert-danger" role="danger" style="margin-bottom:0px;padding-bottom:20px">
+            Colorful Ventures ceased operations as of April 2017. We are maintaining this website as a resource to social entrepreneurs and the impact investing community. 
+        </div>
+    </nav>
+
+    
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/js/d3-tip.js"></script>
+    <link rel="stylesheet" href="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/css/d3-tip.css">
+
+    <section class="container content-section">  
+      
+        <p class="section-header" style="padding-top:30px;text-align:center; margin-bottom:20px;">
+            Landscape: Impact Investing tackles Global Poverty</p>
+        <div id="graph" style="width:980px;margin:0 auto;"></div>
+        <div style="width:980px;margin:-5px auto; padding: 0 45px;" class="license">
+            <table border="0" width="100%">
+                <tr>
+                    <td width="45%"> 
+                    &nbsp;
+                    </td>
+                    <td width="55%" style="text-align:right">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:grey">This landscape is released under a <img src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/img/by-nc-sa.png" height="16"> license</a> by Colorful Ventures      
+                    </td>
+                </tr>
+            </table> 
+            </div>
+    </section>
+    
+    <section class="container content-section" style="padding-top:45px">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <p class="readable">The term <i>Impact Investing</i> was coined in 2007 to refer to "investments made with the intention of generating both financial return and social and/or environmental impact". Less than a decade later, impact investing now boasts <a href="https://thegiin.org/knowledge/publication/annualsurvey2016" target="_blank">$77B in assets</a>, with $15B invested in 2015 alone — a 30% increase from the previous year — and is expected to grow by <a href="http://monitorinstitute.com/downloads/what-we-think/impact-investing/Impact_Investing.pdf" target="_blank">a factor of ten</a> over the next ten years. For comparison, <a href="https://www.weforum.org/agenda/2015/07/which-countries-have-the-most-venture-capital-investments/" target="_blank">$145B was invested</a> in venture capital worldwide in 2015, but experienced a decline of 10% in 2016 in total deal funding.</p>
+                
+                
+    <p class="readable">With such growing interest in this approach to investing from a great variety of stakeholders, impact investing inevitably means different things to different people ranging from <a href="http://www.businesswire.com/news/home/20150623005526/en/Impact-Investing-Mainstream-DBL-Partners%E2%80%99-400-Million" target="_blank">investments in luxury car manufacturer Tesla</a>, to <a href="http://impactalpha.com/rebuilding-lives-reducing-costs-social-impact-bond-finances-jobs-over-jail/" target="_blank">pay-for-success contracts to reduce recidivism</a> or products and services that <a href="https://www.elevarequity.com/about/" target="_blank">benefit people living in poverty in developing countries</a>.</p> 
+    <p class="readable">Impact investing then becomes a catch-all term to encompass investing in any company casually doing “some good” in detriment of those intentionally seeking to affect measurable positive change for society and the environment.</p>
+    <p class="readable">One space where impact investing has started to affect social change and can become transformational is in addressing global development challenges. The landscape depicted above highlights the slice of impact investing that focuses on global poverty, social inequality and economic growth in the developing world. And just to be clear, impact investing is *not* the silver bullet that will end poverty, but is a complementary approach to philanthropy, government interventions and others that can foster much needed economic development and prosperity.</p>
+    <p class="readable">The segment of impact investing that addresses issues of global poverty is thriving, but much like the rest of the impact space, there seems to be a mismatch between capital supply and demand. The majority of investors are looking to invest in growth or mature companies, but report a shortage of quality investment opportunities. The lack of deals is especially acute for institutional investors at the end of the pipeline. On the other hand, dynamic and thriving small and growing enterprises suffer from the ‘<a href="https://www.hks.harvard.edu/centers/cid/programs/entrepreneurial-finance-lab-research-initiative/the-missing-middle" target="_blank">missing middle</a>’: the financing needed for companies to scale their businesses and their social impact; right in the middle between microfinance and commercial loans.</p>
+    <h2>How to navigate this landscape?</h2>
+    <img src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/img/how-to-navigate.gif" style="display: block; margin: 0 auto 30px;"> 
+    
+<ul>
+    <li class="readable">If you are a <b>social entrepreneur</b>, you may start refining your idea through an incubator or grow through the formation stage of your venture through an accelerator. You’ll find them in major cities with a broad focus (<a href="http://cvcx.org/" target="_blank">Atlanta</a>, <a href="http://tdi.org.au/" target="_blank">Melbourne</a>, <a href="http://globaldevincubator.org/" target="_blank">New York</a>, <a href="http://fledge.co/" target="_blank">Seattle</a> or <a href="http://iixglobal.com/" target="_blank">Singapore</a>), or in specific geographies (<a href="http://artemisia.org.br/" target="_blank">Brazil</a>, <a href="http://startupchile.org/" target="_blank">Chile</a>, <a href="http://www.unltdindia.org/" target="_blank">India</a>, <a href="http://nvgroup.org/" target="_blank">Mexico</a>, <a href="http://www.impactamplifier.co.za/" target="_blank">South Africa</a>). While most are on-site, some are also online (<a href="http://www.scu-social-entrepreneurship.org/gsbi-online/" target="_blank">GSBI</a>, <a href="https://bridgeforbillions.org/" target="_blank">B4B</a>).</li>
+    <li class="readable">As an entrepreneur, you’ll gain additional visibility through competitions, awards, and fellowships. While you can apply to some, others are by nomination only, so get to know this space and build your network over time.</li>
+    <li class="readable">If you are an <b>accredited investor</b>, there is no shortage of investment opportunities to get involved, and many funds are actively fundraising at any given point. As of this writing, <a href="https://www.impactbase.org/" target="_blank">ImpactBase</a> reports 150 open funds with existing commitments and another 50 that have just started fundraising. If you want to invest directly, take a look into the Investing Marketplaces in captured in the landscape.</li>
+</ul>
+
+
+    
+    
+    <p class="readable">This vibrant and expanding landscape is where Colorful Ventures operates, focusing on early-stage companies with built-in impact. Our vision is to grow the number of successful companies that make a lasting positive change in this world, and catalyze a vicious circle that attracts more capital, resources and talented entrepreneurs working for a more just and equitable world. While we acknowledge that impact investing alone is not the panacea to end global poverty, we believe that market-based approaches have a big role in alleviating poverty, and we work hard to realize this potential.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <script type="text/javascript">
+        var width = 980; height = 480;
+        //document.getElementById("graph").clientWidth, height = screen.availHeight - 140;
+        var svg = d3.select("#graph").append("svg")
+            .attr("width", width).attr("height", height)
+            .attr("pointer-events", "all")
+            .append("g")
+                .attr("transform", "translate(-50,0)");
+        var defs = svg.append("defs");      // This holds the images for the nodes
+        
+    
+                
+        var tip = d3.tip()
+                .attr("class", "d3-tip")
+                .attr("id", 'd3-tip-1')
+                .html(function(d) { 
+                    var content = d.name+'<br/><img src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/img/link.png" width="12"> <a id="d3-tip-a"  href="http://'+d.domain+'" target="_blank">http://'+d.domain+'</a><br/>';
+                    var index;  // iterate through social media links and display linked icons
+                    for (index = 0; index < d.social.length; ++index) {
+                        content+='<a class="sicons '+d.social[index].label+'" href="'+d.social[index].link+'" target="_blank"></a>';
+                    }
+                    if(d.description){content += '<div class="description">'+d.description+'</div>';}                   
+                    return content; 
+                })
+                .direction(function(d) {    // position tip under, except for leftmost column
+                    if(d.x<20) return 'e'
+                    else       return 's'
+                });
+
+        var showtip = false;    //semaphore
+        svg.call(tip);          //initialize
+                                                  
+        var areas = [ 
+            {x: 455, y:  1, w: 530, h: 45, name: "Networks"},
+            {x: 95,  y: 50, w: 890, h: 45, name: "Services"},
+            {x: 95,  y:100, w: 390, h:102, name: "Fellowships/Awards"},
+            {x: 95,  y:207, w: 390, h:248, name: "Incubators/Accelerators"},
+            {x: 492, y:100, w: 315, h:355, name: "Impact Investors"}, 
+            {x: 815, y:165, w: 170, h:195, name: "Institutional Investors"},
+            {x: 815, y:365, w: 170, h: 89, name: 'Stock Exchanges'},
+            {x: 815, y:100, w: 170, h: 60, name: 'Investing Marketplaces'},
+            //{x:   1, y:350, w: 1137, h:200, name: "Companies"},      
+        ];
+        var arrows = [
+            "340,460,345,470,340,480",
+            "590,460,595,470,590,480",
+            "810,460,815,470,810,480",
+        ]; 
+        
+        var labels = [
+            { 'x': 190, 'y':475, 'label':'Pre-Seed' },
+            { 'x': 450, 'y':475, 'label':'Seed' },
+            { 'x': 670, 'y':475, 'label':'Series A/B' },
+            { 'x': 855, 'y':475, 'label':'Later Rounds' },
+        ]
+                  
+        var areas = svg.selectAll("g area").data(areas)
+        var area  = areas.enter()
+                    .append("g")
+                    .attr("transform", function(d){return "translate("+d.x+","+d.y+")"});
+        area.append("rect")
+                    .style("fill", "transparent")
+                    .style("stroke", "#666")     
+                    .style("stroke-width", 1.5)
+                    .style("stroke-dasharray", "4,4")
+                    .attr("width", function (d) { return d.w })
+                    .attr("height", function (d) { return d.h });
+        area.append("text") 
+                    .attr("dy", function(d){return 16})
+                    .attr("dx", function(d){return 5})
+                    .style("fill", "#666") 
+                    .text(function(d){return d.name});  
+        var rect = svg.append("g")
+                    .append("rect")
+                    .attr("x", 95)
+                    .attr("y", 460)
+                    .attr("width", 890)
+                    .attr("height", 20)  
+                    .style("fill", "#DDD")
+                    .style("stroke", "#666")     
+                    .style("stroke-width", 1.5)
+        var arrow = svg.append("g").selectAll("polyline").data(arrows).enter() 
+                    .append("polyline")
+                    .attr("points", function (d) { return d; })
+                    .style("fill", "#DDD")
+                    .style("stroke", "#666")     
+                    .style("stroke-width", 1.5)
+        var labels = svg.append('g').selectAll('labels').data(labels).enter()
+                    .append('text')
+                    .attr('x',function(d) { return d.x;     })
+                    .attr('y',function(d) { return d.y;     })
+                    .text(    function(d) { return d.label; })
+                    .attr("fill", "#666");
+                    
+
+        var container = svg.append("g");    
+        var node;    
+        d3.json("data/graph.json",  function(error, graph) {
+		    if (error) window.alert(error);
+			var wl = 40;    // size of company icons: width & length
+            node = container.append("g")
+                .attr('class', 'dot')
+                .selectAll('.node')
+                .data(graph.nodes)
+                .enter().append("rect")
+                    .attr('class', 'node')
+                    .attr('width', wl)
+                    .attr('height',wl)
+                    .style('fill', 'transparent')
+                    .style('fill',function (d){ return 'url(#image'+d.id+')' })
+                    .attr('x', function(d) { return d.x; }) // allows drag
+                    .attr('y', function(d) { return d.y; }) // allows drag
+        
+                    .on('mouseover', handleMouseIn)
+                    .on('mouseout', function(d){ showtip=false;setTimeout(function(d){handleMouseOut()}, 200);})
+                    .each(function(d) {
+                    defs.append("pattern")
+                        .attr('id', 'image'+d.id)
+                        .attr('x', '0')
+                        .attr('y', '0')
+                        .attr('height', wl/2)
+                        .attr('width', wl/2)
+                        .append('image')
+                            .attr('x', '0')
+                            .attr('y', '0')
+                            .attr('height', wl)
+                            .attr('width', wl)
+                            .attr("xlink:href", 'images/'+d.id+'.png'); 
+                        }); 
+        });
+    
+        function handleMouseIn (d,i) {
+            showtip=true;
+            tip.show(d);
+        }
+     
+        function handleMouseOut (d,i) {
+            var div = document.getElementById('d3-tip-1');
+            if(div!==null){
+                if(!div.mouseIsOver&&!showtip){
+                    tip.hide(d);
+                }
+            }        
+        }
+    
+        function initDivMouseOver() {
+            var div = document.getElementById('d3-tip-1');
+            div.mouseIsOver = false;
+            div.onmouseover = function()   {
+                this.mouseIsOver = true;
+            };
+            div.onmouseout = function() {
+                // prevent propagation to child element (clicking on link)
+                var e = event.toElement || event.relatedTarget;
+		if (e!==null){
+	            if (e.parentNode == this || e == this) {
+        	        return;
+		    }
+                }
+                this.mouseIsOver = false;
+                showtip=false;
+                tip.hide(this);          
+            }
+        }
+        initDivMouseOver();     // initialize upon loading the page
+        
+        
+    
+</script>
+    
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            &nbsp;
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/grayscale.min.js"></script> 
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81344170-1', 'auto');
+  ga('send', 'pageview');
+    </script>
+    
+</body>
+
+</html>
