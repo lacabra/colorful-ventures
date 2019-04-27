@@ -79,8 +79,8 @@
 
     
     <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/js/d3-tip.js"></script>
-    <link rel="stylesheet" href="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/css/d3-tip.css">
+    <script src="js/d3-tip.js"></script>
+    <link rel="stylesheet" href="css/d3-tip.css">
 
     <section class="container content-section">  
       
@@ -94,7 +94,7 @@
                     &nbsp;
                     </td>
                     <td width="55%" style="text-align:right">
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:grey">This landscape is released under a <img src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/img/by-nc-sa.png" height="16"> license</a> by Colorful Ventures      
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color:grey">This landscape is released under a <img src="img/by-nc-sa.png" height="16"> license</a> by Colorful Ventures      
                     </td>
                 </tr>
             </table> 
@@ -112,7 +112,7 @@
     <p class="readable">One space where impact investing has started to affect social change and can become transformational is in addressing global development challenges. The landscape depicted above highlights the slice of impact investing that focuses on global poverty, social inequality and economic growth in the developing world. And just to be clear, impact investing is *not* the silver bullet that will end poverty, but is a complementary approach to philanthropy, government interventions and others that can foster much needed economic development and prosperity.</p>
     <p class="readable">The segment of impact investing that addresses issues of global poverty is thriving, but much like the rest of the impact space, there seems to be a mismatch between capital supply and demand. The majority of investors are looking to invest in growth or mature companies, but report a shortage of quality investment opportunities. The lack of deals is especially acute for institutional investors at the end of the pipeline. On the other hand, dynamic and thriving small and growing enterprises suffer from the ‘<a href="https://www.hks.harvard.edu/centers/cid/programs/entrepreneurial-finance-lab-research-initiative/the-missing-middle" target="_blank">missing middle</a>’: the financing needed for companies to scale their businesses and their social impact; right in the middle between microfinance and commercial loans.</p>
     <h2>How to navigate this landscape?</h2>
-    <img src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/img/how-to-navigate.gif" style="display: block; margin: 0 auto 30px;"> 
+    <img src="img/how-to-navigate.gif" style="display: block; margin: 0 auto 30px;"> 
     
 <ul>
     <li class="readable">If you are a <b>social entrepreneur</b>, you may start refining your idea through an incubator or grow through the formation stage of your venture through an accelerator. You’ll find them in major cities with a broad focus (<a href="http://cvcx.org/" target="_blank">Atlanta</a>, <a href="http://tdi.org.au/" target="_blank">Melbourne</a>, <a href="http://globaldevincubator.org/" target="_blank">New York</a>, <a href="http://fledge.co/" target="_blank">Seattle</a> or <a href="http://iixglobal.com/" target="_blank">Singapore</a>), or in specific geographies (<a href="http://artemisia.org.br/" target="_blank">Brazil</a>, <a href="http://startupchile.org/" target="_blank">Chile</a>, <a href="http://www.unltdindia.org/" target="_blank">India</a>, <a href="http://nvgroup.org/" target="_blank">Mexico</a>, <a href="http://www.impactamplifier.co.za/" target="_blank">South Africa</a>). While most are on-site, some are also online (<a href="http://www.scu-social-entrepreneurship.org/gsbi-online/" target="_blank">GSBI</a>, <a href="https://bridgeforbillions.org/" target="_blank">B4B</a>).</li>
@@ -146,7 +146,7 @@
                 .attr("class", "d3-tip")
                 .attr("id", 'd3-tip-1')
                 .html(function(d) { 
-                    var content = d.name+'<br/><img src="https://colorful-ventures-data-1.s3.amazonaws.com/landscape/img/link.png" width="12"> <a id="d3-tip-a"  href="http://'+d.domain+'" target="_blank">http://'+d.domain+'</a><br/>';
+                    var content = d.name+'<br/><img src="img/link.png" width="12"> <a id="d3-tip-a"  href="http://'+d.domain+'" target="_blank">http://'+d.domain+'</a><br/>';
                     var index;  // iterate through social media links and display linked icons
                     for (index = 0; index < d.social.length; ++index) {
                         content+='<a class="sicons '+d.social[index].label+'" href="'+d.social[index].link+'" target="_blank"></a>';
